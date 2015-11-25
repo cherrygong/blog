@@ -21,6 +21,11 @@
       <strong>Comment:</strong>
       <%= comment.body %>
     </p>
+
+    <p>
+      <%= link_to 'Destroy Comment', [comment.article, comment], method: :delete%>
+    </p>
+
 <% end %>
 <br> </br>
 
@@ -37,6 +42,8 @@
     <p>
       <%= f.submit %>
     </p>
+
+
 <% end %>
 
 
